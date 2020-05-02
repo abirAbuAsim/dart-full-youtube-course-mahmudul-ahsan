@@ -109,3 +109,104 @@ main() {
     print(number); // Again Prints 150 as number variable is assigned the value 150 by using ??=
 }
 ```
+
+### Testing the type of a variable: 
+
+```
+main() {
+  var age = 100;
+  if(age is int) {
+    print('Integer');
+  } else {
+    print('Not Integer');
+  }
+}
+```
+
+### Different Loops:
+* For-In loop 
+
+```
+main() {
+  var numbers = [10, 20, 30];
+
+  for(var n in numbers) {
+    print(n);
+  }
+}
+```
+* For-Each loop 
+
+```
+main() {
+  var numbers = [10, 20, 30];
+
+  numbers.forEach( (n) => print(n));
+}
+```
+* Other than these Dart supports classic for, while and do-while loops
+* It also supports break and continue feature like most languages
+
+
+### Collections:
+* List
+
+```
+main() {
+  List students1 = ['Abir', 'Aqib', 1, 2];
+
+  students1.forEach((eachStudent) => print(eachStudent));
+
+  List <String> students2 = ['Abir', 'Aqib'];
+
+  students2.forEach((eachStudent) => print(eachStudent));
+}
+```
+* Copying lists with spread operator
+```
+main() {
+  List <String> names = ['Mo', 'Jo'];
+
+  var names2 = names; // Pass by reference, still points to the names variable
+  var namesWithSpread = [...names]; // A copy of the list is created
+  names[0] = 'Bo';
+
+  names2.forEach((name) => print(name)); // Changing names will change names2
+
+  namesWithSpread.forEach((name) => print(name)); // changing names will not effect it anymore
+}
+```
+* Set
+
+```
+main() {
+  var favoriteColors = { 'Red', 'Green', 'Red'};
+
+  favoriteColors.forEach((color) => print(color));
+
+  Set <String> favoriteColors2 = { 'Yellow', 'Green', 'Yellow'};
+
+  favoriteColors2.forEach((color) => print(color));
+}
+```
+* Map
+
+```
+main() {
+  var cloudLeaders = {
+    'first': 'AWS',
+    'second': 'Azure',
+    'third': 'GCP'
+  };
+
+  print(cloudLeaders['first']);
+
+  var cloudLeaders2 = {
+    1: 'AWS',
+    2: 'Azure',
+    3: 'GCP'
+  };
+
+  print(cloudLeaders2[2]);
+}
+```
