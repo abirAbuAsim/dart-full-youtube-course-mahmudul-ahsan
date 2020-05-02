@@ -10,7 +10,7 @@ main() {
   int salary1 = 100;
   var salary2 = 200;
 
-  print('Salary1 : $salary1 | Salaryy2 : $salary2');
+  print('Salary1 : $salary1 | Salary2 : $salary2');
 
   double doubleDigitSalary1 = 100.00;
   var doubleDigitSalary2 = 200.00;

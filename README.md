@@ -47,7 +47,7 @@ main() {
   int salary1 = 100;
   var salary2 = 200;
 
-  print('Salary1 : $salary1 | Salaryy2 : $salary2');
+  print('Salary1 : $salary1 | Salary2 : $salary2');
 
   double doubleDigitSalary1 = 100.00;
   var doubleDigitSalary2 = 200.00;
@@ -72,5 +72,40 @@ main() {
   covidCasesInBd = 'Not Found';
 
   print('covidCasesInBd : $covidCasesInBd');
+}
+```
+* Dart is an Object Oriented Programming language
+* Pretty much everything is an object in dart. For Example `main()` method is an object of 
+
+### Null Aware Operators:
+* ?.
+* ?? 
+
+```
+class Car {
+  String brand = 'Toyota';
+}
+
+main() {
+  var newCar = new Car();
+  String carBrand;
+
+  // Traditional way
+  if(newCar != null) {
+    carBrand = newCar?.brand;
+  }
+
+  carBrand = newCar?.brand; // The dart way
+
+  print(carBrand);
+}
+```
+
+* ??=
+```
+main() {
+    int number;
+    print(number ??= 150); // prints 150
+    print(number); // Again Prints 150 as number variable is assigned the value 150 by using ??=
 }
 ```
