@@ -1,3 +1,8 @@
+This Repo has been written to follow along the video course on Dart titled 'Dart Programming Tutorial - Full Course' published on freeCodeCamp.org's youtube channel and taught by Mahmudul Hasan.
+To watch the video go here, 
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Ej_Pcr4uC2Q/0.jpg)](http://www.youtube.com/watch?v=Ej_Pcr4uC2Q)
+
+---
 ## Dart Fundamentals
 
 ### Supports both type inference and static types: 
@@ -12,7 +17,7 @@ main() {
 ```
 
 * dart core package is imported automatically in any dart project whether you explicitly import it or not
-
+---
 ### Input output Example:
 ```
 import 'dart:io';
@@ -32,7 +37,7 @@ main() {
   print('My name is $name'); 
 }
 ```
-
+---
 ### Data types:
 ```
 main() {
@@ -109,7 +114,7 @@ main() {
     print(number); // Again Prints 150 as number variable is assigned the value 150 by using ??=
 }
 ```
-
+---
 ### Testing the type of a variable: 
 
 ```
@@ -122,7 +127,7 @@ main() {
   }
 }
 ```
-
+---
 ### Different Loops:
 * For-In loop 
 
@@ -146,7 +151,7 @@ main() {
 ```
 * Other than these Dart supports classic for, while and do-while loops
 * It also supports break and continue feature like most languages
-
+---
 
 ### Collections:
 * List
